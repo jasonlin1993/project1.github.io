@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電商網站練習</title>
+    <!-- Font Awesome 連結 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS連結 -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- 第1區header -->
+        <header>
+            <nav class="navbar">
+                <div class="shopname">
+                    <h1>SHOPPING</h1>
+                </div>
+                <div class="search-bar">
+                    <a  class="search-btn">
+                        <img src="images/icons/search-icon.png">
+                    </a>
+                    <input type="search" name="search-field" placeholder="  搜尋商品...">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-user"></i>
+                                登入/註冊
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                                 常見問題
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                購物車
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-phone"></i>
+                                線上客服
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+    <!-- 第2區 選單 shop-menu  -->
+        <section class="section2" id="section2">
+            <nav class="hambuger_menu">
+                <div class="shop_menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="title_menu">
+                                首頁
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="title_menu">
+                                Shopping 服飾
+                                <i class="fa-solid fa-angle-down arrow cloth_css_arrow"></i>
+                                <ul class="css_sub_menu">
+                                    <li>外套</li>
+                                    <li>衛生衣</li>
+                                    <li>T恤</li>
+                                    <li>褲子</li>
+                                    <li>內衣/內褲</li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="title_menu">
+                                Shopping 鞋子
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="title_menu">
+                                Shopping 包包
+                                <i class="fa-solid fa-angle-down arrow bag_css_arrow"></i>
+                                <ul class="css_sub_menu">
+                                    <li>後背包</li>
+                                    <li>單肩包</li>
+                                    <li>腰包</li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="title_menu">
+                                Shopping 配飾
+                                <i class="fa-solid fa-angle-down arrow accessories_css_arrow"></i>
+                                <ul class="css_sub_menu">
+                                    <li>潮流配飾</li>
+                                    <li>帽子</li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="title_menu">
+                                最新資訊
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+    <!-- 第3區轉播圖片 -->
+        <!-- js連結 -->
+        <script src="js/carousel.js" defer></script>
+            <section class="section3" id="section3">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </button>
+                    <button class="carousel-button next" data-carousel-button="next">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="images/thumbnail/homepage1.jpg" alt="homepage1">
+                        </li>
+                        <li class="slide">
+                            <img src="images/thumbnail/homepage2.jpg" alt="homepage2">
+                        </li>
+                        <li class="slide">
+                            <img src="images/thumbnail/homepage3.jpg" alt="homepage3">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+    <!-- 第4區 服飾產品介紹 -->
+    <section class="section4" id="section4">
+        <div class="season_title">
+            <div class="title_text">
+                <h1>熱銷商品,秋冬最新款</h1>
+                <h2>全館熱選兩件9折優惠、滿2000免運費!!</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image_box">
+                <img src="images/thumbnail/T-shirt2.jpg" alt="clothes"> 
+                <div class="describe_text">
+                    <p>限量演唱會T恤</p>
+                    <p>NT.290</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/COAT1.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>嘻哈聯名外套</p>
+                    <p>NT.1180</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/COAT2.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>情侶穿搭外套</p>
+                    <p>NT.599</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/COAT3.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>秋冬最新帽T</p>
+                    <p>NT.590</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/T-shirt.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>寬鬆嘻哈T恤</p>
+                    <p>NT.770</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/COAT5.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>經典時尚軍外套</p>
+                    <p>NT.250</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/T-shirt10.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>街頭運動外套</p>
+                    <p>NT.2500</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/COAT8.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>時尚皮外套</p>
+                    <p>NT.6000</p>
+                </div>
+            </div>
+            <div class="image_box">
+                <img src="images/thumbnail/T-shirt9.jpg" alt="clothes">
+                <div class="describe_text">
+                    <p>潮流聯名帽</p>
+                    <p>NT.1290</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 第5區 footer -->
+        <footer>
+            <div class="footer_bottom">
+                <p>&copy; Lin Jia-Cheng</p>
+            </div>
+        </footer>
+    <!-- 回上層按鈕 -->
+
+</body>
+    <!-- JS連結 -->
+    <script src="js/script.js"></script>
+</html>
