@@ -1,0 +1,466 @@
+
+/* 版面設定 */
+*{
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+/* 第1區 header */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: black; 
+}
+
+.shopname{
+    background-color: black; 
+    color:red;
+    font-family: "Arial black";
+    font-size: 20px;
+    width: 15%;
+} 
+
+header .menu{
+    display: block;
+} 
+
+.icon_wrapper{
+    color:white;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid white; 
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0px 10px ;
+    color:white; 
+    font-family: "微軟正黑體";
+}
+
+.search-bar{
+    height: 40px;
+    width: 40%;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    padding: 0rem  1em;
+}
+
+.search-bar input {
+    background: transparent;
+    flex:1;
+    border:0;
+    outline:none;
+    font-size: 15px;
+    padding: 1px 1px 1px 1px;
+}
+
+.search-btn img{
+    height: 15px;
+    width: 15px;
+    border: 0;
+    margin-right: 5px;
+    opacity: 0.3;
+} 
+
+/* 第2區 選單 shop-menu */
+
+.section2{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.hambuger_menu{
+    background-color:#333333;
+}
+
+*,
+*:before,
+*:after{
+    position: relative;
+    text-decoration: dashed;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.shop_menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.shop_menu ul li{
+    list-style: none;
+    display:inline-block;
+}
+
+
+.shop_menu ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding:10px 10px 10px 10px ;
+    color:white;
+    font-family: "微軟正黑體";
+}
+
+
+.shop_menu ul li a:hover{
+    color:gray;
+}
+
+.hambuger_menu .shop_menu .title_menu::after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 1px;
+    width: 0;
+    left: 0;
+    top: 35px;
+    transition: 0.4s ease-out;
+}
+
+.hambuger_menu .shop_menu .title_menu:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+
+.hambuger_menu .shop_menu li .arrow{
+    transition: all 0.3s ease;
+}
+
+
+.hambuger_menu .shop_menu .css_sub_menu{
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    top:45px;
+    text-align: left;
+    width: 190px;
+    line-height: 40px;
+    border-radius:0 0 4px 4px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05);
+    background-color: #f7f8fa;
+    z-index: 2;
+}
+
+.hambuger_menu .shop_menu .css_sub_menu li{
+    color:black;
+}
+
+.hambuger_menu .shop_menu li:hover .cloth_css_arrow,
+.hambuger_menu .shop_menu li:hover .bag_css_arrow,
+.hambuger_menu .shop_menu li:hover .accessories_css_arrow{
+    transform: rotate(180deg);
+}
+
+.hambuger_menu .shop_menu li:hover .css_sub_menu {
+    display: flex;
+}
+
+.hambuger_menu .shop_menu .css_sub_menu li:hover{
+    color:yellowgreen;
+} 
+
+/* 第3區 轉播圖片 */
+     .carousel{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .carousel > ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .slide {
+        position: absolute;
+        inset:0;
+        opacity: 0;
+        transition: 200ms opacity ease-in-out;
+        transition-delay:200ms ;
+    }
+
+    .slide > img{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .slide[data-active]{
+        opacity: 1;
+        z-index: 1;
+        transition-delay: 0ms;
+    }
+
+    .carousel-button {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 3rem;
+        top: 50%;
+        transform: translate(-50%);
+        color: rgba(255, 255, 255, .5);
+        cursor: pointer;
+        border-radius: .25rem;
+        padding: 0.5rem;
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .carousel-button:hover,
+    .carousel-button:focus {
+        color: white;
+        background-color: (0, 0, 0, .2);
+    }
+
+    .carousel-button:focus{
+        outline: 1px solid black;
+    }
+
+    .carousel-button.prev{
+        left: 3rem;
+    }
+
+    .carousel-button.next{
+        right: -1rem;
+    } 
+
+/* 第4區 服飾產品介紹 */
+
+
+    .season_title{
+        background-color: #dc9814;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .title_text h1{
+        background-color: red;
+        display: inline-block;
+        color:white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .title_text h2{
+        display:inline-block;
+        color:white;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image_box img{
+        flex: none;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 10px;
+    }
+
+    .describe_text p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    } 
+
+    
+/* 第5區 footer */
+
+footer{
+        background-color: black;
+        height: auto;
+        width: 100vw;
+        font-family: "微軟正黑體";
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+}
+
+.footer_bottom{
+    text-align: center;
+}
+
+.footer_bottom p{
+    font-size: 20px;
+    letter-spacing: 4px;
+} 
+
+/* 回到上層按鈕 */
+
+
+/* RWD 手機版 */
+
+/* 第2區shop-menu */
+
+
+#check_box{
+    display: none;
+}
+
+.bar .bar_icon_bar{
+    padding: 10px;  
+    color: #f7f8fa;
+    display: none;
+}
+
+
+.bar .bar_icon_xmark{
+    display: none;
+    padding: 10px;  
+    color: #f7f8fa;
+}
+
+.bar span{
+    color:black;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+@media(max-width:990px){
+    /* 螢幕小於990px,套用這個區塊的css */
+
+
+    header .navbar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+
+    header .menu ul li .fa-user,
+    header .menu ul li .fa-cart-shopping,
+    header .menu ul li .fa-circle-question,
+    header .menu ul li .fa-phone{
+        display: none;
+    }
+    
+    header .menu ul li a{
+        display: none;
+    }
+
+    header .search-bar{
+        display: none;
+    }
+
+
+    .section2 {
+        display: block;
+    }
+
+    .bar .bar_icon_bar{
+        display: block;
+        border-right: 1px solid gray;
+    }
+    
+    .section2 .shop_menu{
+        display:block;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+    } 
+
+    .section2 .shop_menu ul li{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section2 .shop_menu .title_menu{
+        font-family: "Arial Black";
+        font-size: 20px;
+        display: none;
+    }
+
+    .hambuger_menu .shop_menu .css_sub_menu{
+        position: relative;
+        text-align: center;
+        box-shadow: none;
+        top: 10.5px;
+        background-color:#333333;
+        font-family: "Arial Black";
+    }
+
+    .hambuger_menu .shop_menu ul li .title_menu .css_sub_menu li{
+        font-family: "Arial Black";
+        color:white;
+    }
+
+    .hambuger_menu .shop_menu ul li .title_menu .css_sub_menu li:hover{
+        color:yellow;
+    }
+
+    #check_box:checked ~  header .navbar .bar .bar_icon_xmark {
+        display: block;
+
+    }
+
+    #check_box:checked ~ header .navbar .bar .bar_icon_bar {
+        display: none;
+        color: yellow;
+    }
+
+    #check_box:checked ~ .section2 .shop_menu .title_menu{
+        display: block;
+    }
+}
+
+/* 第四區 服飾產品介紹 */
+
+@media (max-width:1200px){
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 6;
+    }
+
+    .section4 .container .image_box img{
+        background-color: yellow;
+        margin: 10px;
+        padding: 0;
+    }
+    .section4 .season_title {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:650px){
+    .section4 .container .image_box{
+        margin: 0;
+        padding: 0;
+    }
+
+
+}
