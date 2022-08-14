@@ -1,35 +1,39 @@
 
 /* 版面設定 */
 *{
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "微軟正黑體";
 }
 
 /* 第1區 header */
 
 .navbar {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    justify-content: space-between;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 20px;
     background-color: black; 
 }
 
 .shopname{
     background-color: black; 
     color:red;
-    margin-left: 263px;
     font-family: "Arial black";
     font-size: 20px;
+    width: 15%;
 } 
 
-.navbar ul{
-    margin-right: 250px;
-    margin-top: 10px;
+header .menu{
+    display: block;
+} 
+
+.icon_wrapper{
+    color:white;
 }
 
 .navbar ul li{
@@ -39,7 +43,7 @@
 }
 
 .navbar ul li a {
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
     letter-spacing: 2px;
     padding: 0px 10px ;
@@ -48,7 +52,8 @@
 }
 
 .search-bar{
-    width: 35%;
+    height: 40px;
+    width: 40%;
     background: #F8F8F8;
     display: flex;
     align-items: center;
@@ -63,7 +68,6 @@
     outline:none;
     font-size: 15px;
     padding: 1px 1px 1px 1px;
-
 }
 
 .search-btn img{
@@ -72,13 +76,13 @@
     border: 0;
     margin-right: 5px;
     opacity: 0.3;
-}
+} 
 
 /* 第2區 選單 shop-menu */
 
 .hambuger_menu{
     background-color:#333333;
-} 
+}
 *,
 *:before,
 *:after{
@@ -90,13 +94,16 @@
 }
 
 .shop_menu{
-    margin-left: 260px;
+    display: flex;
+    justify-content: center;
     padding: 10px;
+    width: 100%;
+    border: 1px solid #000;
 }
 
 .shop_menu ul li{
     list-style: none;
-    display: inline-block;
+    display:inline-block;
 }
 
 
@@ -137,10 +144,10 @@
 
 
 .hambuger_menu .shop_menu .css_sub_menu{
-    position: absolute;
+    position:absolute;
     display: none;
     flex-direction: column;
-    top:43px;
+    top:45px;
     text-align: left;
     width: 190px;
     line-height: 40px;
@@ -166,11 +173,10 @@
 
 .hambuger_menu .shop_menu .css_sub_menu li:hover{
     color:yellowgreen;
-}
-
+} 
 
 /* 第3區 轉播圖片 */
-    .carousel{
+     .carousel{
         width: 100%;
         height: 100vh;
         position: relative;
@@ -235,9 +241,11 @@
 
     .carousel-button.next{
         right: -1rem;
-    }
+    } 
 
 /* 第4區 服飾產品介紹 */
+
+
     .season_title{
         background-color: #dc9814;
         padding: 20px;
@@ -259,27 +267,30 @@
         text-align: center;
     }
 
-    .image_box{
-        width: 33%;
-        display: inline-block;
-        padding: 30px 0px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .image_box img{
-        width: 50%;
-        display: block;
-        position: relative;
-        top: 60%;
-        left: 25%;
-        /* transform: translate(-50%, -50%);  */
-
+        flex: none;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: 10px;
     }
 
     .describe_text p{
+        display: flex;
         text-align: center;
-    }
+        justify-content: center;
+    } 
+
+    
 /* 第5區 footer */
-    footer{
+
+footer{
         background-color: black;
         height: auto;
         width: 100vw;
@@ -287,7 +298,8 @@
         padding-top: 10px;
         padding-bottom: 10px;
         color: white;
-    }
+}
+
 .footer_bottom{
     text-align: center;
 }
@@ -295,10 +307,149 @@
 .footer_bottom p{
     font-size: 20px;
     letter-spacing: 4px;
-}
+} 
+
 /* 回到上層按鈕 */
 
 
 /* RWD 手機版 */
 
-/* 第1區header */
+/* 第2區shop-menu */
+
+
+#check_box{
+    display: none;
+}
+
+.bar .bar_icon_bar{
+    padding: 10px;  
+    color: #f7f8fa;
+    display: none;
+}
+
+
+.bar .bar_icon_xmark{
+    display: none;
+    padding: 10px;  
+    color: #f7f8fa;
+}
+
+.bar span{
+    color:black;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+@media(max-width:990px){
+    /* 螢幕小於990px,套用這個區塊的css */
+
+
+    header .navbar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+
+    header .menu ul li .fa-user,
+    header .menu ul li .fa-cart-shopping,
+    header .menu ul li .fa-circle-question,
+    header .menu ul li .fa-phone{
+        display: none;
+    }
+    
+    header .menu ul li a{
+        display: none;
+    }
+
+    header .search-bar{
+        display: none;
+    }
+
+
+    .section2 {
+        display: block;
+    }
+
+    .bar .bar_icon_bar{
+        display: block;
+        border-right: 1px solid gray;
+    }
+    
+    .section2 .shop_menu{
+        display:block;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+    } 
+
+    .section2 .shop_menu ul li{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section2 .shop_menu .title_menu{
+        font-family: "Arial Black";
+        font-size: 20px;
+        display: none;
+    }
+
+    .hambuger_menu .shop_menu .css_sub_menu{
+        position: relative;
+        text-align: center;
+        box-shadow: none;
+        top: 10.5px;
+        background-color:#333333;
+        font-family: "Arial Black";
+    }
+
+    .hambuger_menu .shop_menu ul li .title_menu .css_sub_menu li{
+        font-family: "Arial Black";
+        color:white;
+    }
+
+    .hambuger_menu .shop_menu ul li .title_menu .css_sub_menu li:hover{
+        color:yellow;
+    }
+
+    #check_box:checked ~  header .navbar .bar .bar_icon_xmark {
+        display: block;
+
+    }
+
+    #check_box:checked ~ header .navbar .bar .bar_icon_bar {
+        display: none;
+        color: yellow;
+    }
+
+    #check_box:checked ~ .section2 .shop_menu .title_menu{
+        display: block;
+    }
+}
+
+/* 第四區 服飾產品介紹 */
+
+@media (max-width:1200px){
+
+
+
+    .section4 .container .image_box img{
+        background-color: yellow;
+        margin: 0;
+        padding: 0;
+    }
+    .section4 .season_title {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:650px){
+    .section4 .container .image_box{
+        margin: 0;
+        padding: 0;
+    }
+
+
+}

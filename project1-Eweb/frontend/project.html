@@ -13,10 +13,15 @@
 </head>
 <body>
     <!-- 第1區header -->
+    <input type="checkbox"  id="check_box">
         <header>
-            <nav class="navbar">
+            <div class="navbar">
+                <label for="check_box" class="bar">
+                    <span class="bar_icon_bar"><i class="fa-solid fa-bars"></i></span>
+                    <span class="bar_icon_xmark"><i class="fa-solid fa-xmark"></i></span>
+                </label>
                 <div class="shopname">
-                    <h1>SHOPPING</h1>
+                    <h1>SHOP</h1>
                 </div>
                 <div class="search-bar">
                     <a  class="search-btn">
@@ -27,98 +32,98 @@
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="#">
+                            <div class="icon_wrapper">
                                 <i class="fa-solid fa-user"></i>
-                                登入/註冊
-                            </a>
+                            </div>
+                            <a href="#">登入/註冊</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <div class="icon_wrapper">
                                 <i class="fa-solid fa-circle-question"></i>
-                                 常見問題
-                            </a>
+                            </div>
+                            <a href="#">常見問題</a> 
                         </li>
                         <li>
-                            <a href="#">
+                            <div class="icon_wrapper">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                購物車
-                            </a>
+                            </div>
+                            <a href="#">購物車</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <div class="icon_wrapper">
                                 <i class="fa-solid fa-phone"></i>
-                                線上客服
-                            </a>
+                            </div>
+                            <a href="#">線上客服</a>
                         </li>
                     </ul>
                 </div>
-
-            </nav>
+            </div>
         </header>
     <!-- 第2區 選單 shop-menu  -->
-        <section class="section2" id="section2">
-            <nav class="hambuger_menu">
-                <div class="shop_menu">
-                    <ul>
-                        <li>
-                            <a href="#" class="title_menu">
-                                首頁
-                            </a>
-                        </li>
+            <section class="section2">
+                <nav class="hambuger_menu">
+                    <div class="shop_menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="title_menu">
+                                    首頁
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="title_menu">
-                                Shopping 服飾
-                                <i class="fa-solid fa-angle-down arrow cloth_css_arrow"></i>
-                                <ul class="css_sub_menu">
-                                    <li>外套</li>
-                                    <li>衛生衣</li>
-                                    <li>T恤</li>
-                                    <li>褲子</li>
-                                    <li>內衣/內褲</li>
-                                </ul>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" class="title_menu">
+                                    Shopping 服飾
+                                    <i class="fa-solid fa-angle-down arrow cloth_css_arrow"></i>
+                                    <ul class="css_sub_menu">
+                                        <li>外套</li>
+                                        <li>衛生衣</li>
+                                        <li>T恤</li>
+                                        <li>褲子</li>
+                                        <li>內衣/內褲</li>
+                                    </ul>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="title_menu">
-                                Shopping 鞋子
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" class="title_menu">
+                                    Shopping 鞋子
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="title_menu">
-                                Shopping 包包
-                                <i class="fa-solid fa-angle-down arrow bag_css_arrow"></i>
-                                <ul class="css_sub_menu">
-                                    <li>後背包</li>
-                                    <li>單肩包</li>
-                                    <li>腰包</li>
-                                </ul>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" class="title_menu">
+                                    Shopping 包包
+                                    <i class="fa-solid fa-angle-down arrow bag_css_arrow"></i>
+                                    <ul class="css_sub_menu">
+                                        <li>後背包</li>
+                                        <li>單肩包</li>
+                                        <li>腰包</li>
+                                    </ul>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="title_menu">
-                                Shopping 配飾
-                                <i class="fa-solid fa-angle-down arrow accessories_css_arrow"></i>
-                                <ul class="css_sub_menu">
-                                    <li>潮流配飾</li>
-                                    <li>帽子</li>
-                                </ul>
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" class="title_menu">
+                                    Shopping 配飾
+                                    <i class="fa-solid fa-angle-down arrow accessories_css_arrow"></i>
+                                    <ul class="css_sub_menu">
+                                        <li>潮流配飾</li>
+                                        <li>帽子</li>
+                                    </ul>
+                                </a>
+                            </li>
 
-                        <li>
-                            <a href="#" class="title_menu">
-                                最新資訊
-                            </a>
-                        </li>
+                            <li>
+                                <a href="#" class="title_menu">
+                                    最新資訊
+                                </a>
+                            </li>
+                            
+                        </ul>
 
-                    </ul>
-                </div>
-            </nav>
-        </section>
+                    </div>
+                </nav>
+            </section>
 
     <!-- 第3區轉播圖片 -->
         <!-- js連結 -->
@@ -146,6 +151,7 @@
             </section>
 
     <!-- 第4區 服飾產品介紹 -->
+
     <section class="section4" id="section4">
         <div class="season_title">
             <div class="title_text">
@@ -157,8 +163,8 @@
             <div class="image_box">
                 <img src="images/thumbnail/T-shirt2.jpg" alt="clothes"> 
                 <div class="describe_text">
-                    <p>限量演唱會T恤</p>
-                    <p>NT.290</p>
+                    <p>限量演唱會T恤 </p> 
+                    <p>NT.290</p> 
                 </div>
             </div>
             <div class="image_box">
@@ -219,12 +225,14 @@
             </div>
         </div>
     </section>
+
     <!-- 第5區 footer -->
         <footer>
             <div class="footer_bottom">
                 <p>&copy; Lin Jia-Cheng</p>
             </div>
         </footer>
+
     <!-- 回上層按鈕 -->
 
 </body>
